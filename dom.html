@@ -30,13 +30,36 @@ Test
         	alert(links[i].innerHTML);
     	}
     }
+
+	function getInfo(){
+		var a=document.getElementById("getter").innerHTML;
+		alert(a);
+		var head=document.head;
+		head.setAttribute("title", "Pee Wee");
+ 		document.getElementById("butt5").innerHTML=document.URL+' '+document.title;
+    }
+
+    function test_links(){
+    	var a=document.links;
+    	alert("size is "+a.length);
+    	for(i=0;i<a.length;i++){
+    		alert(a[i].innerHTML);
+    		a[i].innerHTML+="Ok All Good"
+    	}
+    }
 </script>
 
+<p id='getter'>Testing getter</p>
+
+<button id="butt", onclick="getInfo();">Getter</button>
 <button id="butt", onclick="setInfo2();">Hit Me 2</button>
 <button id="butt", onclick="setInfo();">Hit Me</button>
 <button id="butt", onclick="setInfo1();">Hit Me Again</button>
+<button onclick=test_links()>Test Links</button>
 
-<a href='about.html'>About</a>
+<a href='about.html'>About!</a>
+<a href='https://www.hockeydb.com'>Hockey DB</a>
+<a href='https;//www.amazon.com'>Amazon</a>
 
 </body>
 
