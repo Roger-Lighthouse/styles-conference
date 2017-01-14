@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Nut Program</title>
+</head>
+
+<body>
+
+<p id='demo'></p>
+Test
+<p id='butt5'></p>
+
+
+<script>
+	document.getElementById("demo").innerHTML='Hello';
+    //a.innerHTML='Nuts';
+
+  
+    function setInfo2(){
+		document.getElementById("demo").innerHTML='Hello Nut Weiner';
+    }
+
+    function setInfo(){
+		document.getElementById("butt5").innerHTML='Hello Nut';
+    }
+
+    function setInfo1(){
+		document.getElementById("butt5").innerHTML=document.URL+' '+document.title;
+        var links=document.links;
+        for(var i=0; i<links.size; i++){
+        	alert(links[i].innerHTML);
+    	}
+    }
+</script>
+
+<button id="butt", onclick="setInfo2();">Hit Me 2</button>
+<button id="butt", onclick="setInfo();">Hit Me</button>
+<button id="butt", onclick="setInfo1();">Hit Me Again</button>
+
+<a href='about.html'>About</a>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
